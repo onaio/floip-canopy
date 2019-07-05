@@ -1,18 +1,5 @@
 version: '3'
 services:
-  # nginx:
-  #   image: nginx
-  #   ports:
-  #   - 80
-  #   environment:
-  #     - NGINX_HOST=localhost
-  #     - NGINX_PORT=80
-  #   command: >
-  #     bash -c "apt update
-  #     && apt install -y apache2-utils
-  #     && htpasswd -cb /etc/nginx/.htpasswd admin 'p@ssw0rd'
-  #     && exec nginx -g 'daemon off;"
-
   zookeeper:
     hostname: zookeeper
     image: 'bitnami/zookeeper:latest'
