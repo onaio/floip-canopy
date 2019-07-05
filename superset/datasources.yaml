@@ -1,0 +1,47 @@
+databases:
+- database_name: main
+  expose_in_sqllab: true
+  extra: "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n"
+  sqlalchemy_uri: postgresql+psycopg2://admin:XXXXXXXXXX@db:5432/flow_results
+  tables:
+  - columns:
+    - {column_name: fields_to_name_label_map, type: JSONB}
+    - {column_name: form_id, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: form_version, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: geotypes, type: JSONB}
+    - {column_name: long_field_names_map, type: JSONB}
+    - {column_name: metadata_details, type: JSONB}
+    - {column_name: table_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: token, filterable: true, groupby: true, type: VARCHAR}
+    metrics:
+    - {expression: COUNT(*), metric_name: count, metric_type: count, verbose_name: COUNT(*)}
+    schema: ''
+    table_name: form_details
+  - columns:
+    - {avg: true, column_name: _location_accuracy, sum: true, type: DOUBLE PRECISION}
+    - {avg: true, column_name: _location_altitude, sum: true, type: DOUBLE PRECISION}
+    - {avg: true, column_name: _location_latitude, sum: true, type: DOUBLE PRECISION}
+    - {avg: true, column_name: _location_longitude, sum: true, type: DOUBLE PRECISION}
+    - {avg: true, column_name: stars, sum: true, type: DOUBLE PRECISION}
+    - {column_name: borough, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: date, is_dttm: true, type: DATE}
+    - {column_name: name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: submission_uuid, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: visited, filterable: true, groupby: true, type: VARCHAR}
+    main_dttm_col: date
+    metrics:
+    - {expression: AVG(_location_accuracy), metric_name: avg___location_accuracy, metric_type: avg}
+    - {expression: AVG(_location_altitude), metric_name: avg___location_altitude, metric_type: avg}
+    - {expression: AVG(_location_latitude), metric_name: avg___location_latitude, metric_type: avg}
+    - {expression: AVG(_location_longitude), metric_name: avg___location_longitude,
+      metric_type: avg}
+    - {expression: AVG(stars), metric_name: avg__stars, metric_type: avg}
+    - {expression: COUNT(*), metric_name: count, metric_type: count, verbose_name: COUNT(*)}
+    - {expression: SUM(_location_accuracy), metric_name: sum___location_accuracy, metric_type: sum}
+    - {expression: SUM(_location_altitude), metric_name: sum___location_altitude, metric_type: sum}
+    - {expression: SUM(_location_latitude), metric_name: sum___location_latitude, metric_type: sum}
+    - {expression: SUM(_location_longitude), metric_name: sum___location_longitude,
+      metric_type: sum}
+    - {expression: SUM(stars), metric_name: sum__stars, metric_type: sum}
+    schema: ''
+    table_name: pizza_survey
