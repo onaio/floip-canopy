@@ -10,6 +10,7 @@ services:
     image: apache/nifi:1.9.2
     ports:
       - "8080:8080"
+      - "9090:9090"
     volumes:
       - ./nifi:/config/
     entrypoint: >
