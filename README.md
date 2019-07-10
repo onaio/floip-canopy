@@ -7,7 +7,7 @@ A demo setup of Apache NiFi and superset to ingest a FLOIP Results endpoint and 
 
 Bring up the setup with `docker-compose up`, it may take upto 3 minutes for all the services to be fully functional after docker image downloads.
 
-    $ docker-compose up
+    $ docker-compose up -d
 
 
 ## Dashboard
@@ -35,3 +35,8 @@ curl http://localhost:9090/floip -H "Content-Type: application/json" -H "package
 ## Nifi Flow Processor
 
 Access the nifi processor at http://localhost:8080/nifi.
+
+## AVRO Files
+Avro formated flow results for Pizza Survey is stored in `pizza_survey.avro` file which can be accessed by getting into avro directory.
+
+    $ cd nifi/avro

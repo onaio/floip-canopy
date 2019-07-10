@@ -3,149 +3,106 @@
         {
             "__Dashboard__": {
                 "css": "",
-                "position_json": "{\"CHART-b_NzlTgL02\":{\"children\":[],\"id\":\"CHART-b_NzlTgL02\",\"meta\":{\"chartId\":5,\"height\":72,\"sliceName\":\"Tables loaded\",\"width\":12},\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-DkUugXFgm\"],\"id\":\"GRID_ID\",\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"Tables loaded\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-DkUugXFgm\":{\"children\":[\"CHART-b_NzlTgL02\"],\"id\":\"ROW-DkUugXFgm\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"}}",
+                "position_json": "{\"CHART-6U0QrqOcD5\": {\"children\": [], \"id\": \"CHART-6U0QrqOcD5\", \"meta\": {\"chartId\": 3, \"height\": 51, \"sliceName\": \"Restaurants visited\", \"width\": 6}, \"type\": \"CHART\"}, \"CHART-8I4g44oIf-\": {\"children\": [], \"id\": \"CHART-8I4g44oIf-\", \"meta\": {\"chartId\": 5, \"height\": 49, \"sliceName\": \"Restaurants rating\", \"width\": 6}, \"type\": \"CHART\"}, \"CHART-NGiE2t-hfP\": {\"children\": [], \"id\": \"CHART-NGiE2t-hfP\", \"meta\": {\"chartId\": 4, \"height\": 49, \"sliceName\": \"Pizza restaurants per borough\", \"width\": 6}, \"type\": \"CHART\"}, \"CHART-pA2fIViksu\": {\"children\": [], \"id\": \"CHART-pA2fIViksu\", \"meta\": {\"chartId\": 2, \"height\": 50, \"sliceName\": \"Visited restaurants\", \"width\": 6}, \"type\": \"CHART\"}, \"DASHBOARD_VERSION_KEY\": \"v2\", \"GRID_ID\": {\"children\": [\"ROW-_5mrBavQm\", \"ROW-Kepi0Jggq\"], \"id\": \"GRID_ID\", \"type\": \"GRID\"}, \"HEADER_ID\": {\"id\": \"HEADER_ID\", \"meta\": {\"text\": \"Pizza Survey\"}, \"type\": \"HEADER\"}, \"ROOT_ID\": {\"children\": [\"GRID_ID\"], \"id\": \"ROOT_ID\", \"type\": \"ROOT\"}, \"ROW-Kepi0Jggq\": {\"children\": [\"CHART-8I4g44oIf-\", \"CHART-NGiE2t-hfP\"], \"id\": \"ROW-Kepi0Jggq\", \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}, \"type\": \"ROW\"}, \"ROW-_5mrBavQm\": {\"children\": [\"CHART-pA2fIViksu\", \"CHART-6U0QrqOcD5\"], \"id\": \"ROW-_5mrBavQm\", \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}, \"type\": \"ROW\"}}",
                 "id": 2,
                 "created_on": {
-                    "__datetime__": "2019-07-05T13:02:04"
+                    "__datetime__": "2019-07-09T12:01:25"
                 },
-                "created_by_fk": 1,
-                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 2}",
-                "description": null,
-                "dashboard_title": "Tables loaded",
-                "changed_on": {
-                    "__datetime__": "2019-07-05T13:02:15"
-                },
-                "changed_by_fk": 1,
-                "slug": null,
-                "slices": [
-                    {
-                        "__Slice__": {
-                            "datasource_id": 4,
-                            "id": 5,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T13:02:04"
-                            },
-                            "created_by_fk": 1,
-                            "perm": "[None].[Admin Admin-Untitled Query-M78kYOVTe](id:4)",
-                            "description": null,
-                            "viz_type": "table",
-                            "datasource_type": "table",
-                            "slice_name": "Tables loaded",
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T13:02:43"
-                            },
-                            "changed_by_fk": 1,
-                            "cache_timeout": null,
-                            "params": "{\"datasource\": \"4__table\", \"viz_type\": \"table\", \"url_params\": {}, \"granularity_sqla\": \"date_added\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"groupby\": [\"table_name\", \"date_added\"], \"metrics\": [], \"percent_metrics\": [], \"timeseries_limit_metric\": null, \"row_limit\": 1000, \"include_time\": false, \"order_desc\": true, \"all_columns\": [], \"order_by_cols\": [\"[\\\"date_added\\\", false]\"], \"adhoc_filters\": [], \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"page_length\": 0, \"include_search\": false, \"table_filter\": false, \"align_pn\": false, \"color_pn\": true, \"remote_id\": 5, \"datasource_name\": \"public.Admin Admin-Untitled Query-M78kYOVTe\", \"schema\": \"public.Admin Admin-Untitled Query-M78kYOVTe\", \"database_name\": \"main\"}",
-                            "datasource_name": "public.Admin Admin-Untitled Query-M78kYOVTe"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "__Dashboard__": {
-                "css": "",
-                "position_json": "{\"CHART-6U0QrqOcD5\":{\"children\":[],\"id\":\"CHART-6U0QrqOcD5\",\"meta\":{\"chartId\":2,\"height\":51,\"sliceName\":\"Restaurants visited\",\"width\":6},\"type\":\"CHART\"},\"CHART-8I4g44oIf-\":{\"children\":[],\"id\":\"CHART-8I4g44oIf-\",\"meta\":{\"chartId\":4,\"height\":49,\"sliceName\":\"Restaurants rating\",\"width\":6},\"type\":\"CHART\"},\"CHART-NGiE2t-hfP\":{\"children\":[],\"id\":\"CHART-NGiE2t-hfP\",\"meta\":{\"chartId\":3,\"height\":49,\"sliceName\":\"Pizza restaurants per borough\",\"width\":6},\"type\":\"CHART\"},\"CHART-pA2fIViksu\":{\"children\":[],\"id\":\"CHART-pA2fIViksu\",\"meta\":{\"chartId\":1,\"height\":50,\"sliceName\":\"Visited restaurants\",\"width\":6},\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-_5mrBavQm\",\"ROW-Kepi0Jggq\"],\"id\":\"GRID_ID\",\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"Pizza Survey\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-Kepi0Jggq\":{\"children\":[\"CHART-8I4g44oIf-\",\"CHART-NGiE2t-hfP\"],\"id\":\"ROW-Kepi0Jggq\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"},\"ROW-_5mrBavQm\":{\"children\":[\"CHART-pA2fIViksu\",\"CHART-6U0QrqOcD5\"],\"id\":\"ROW-_5mrBavQm\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"}}",
-                "id": 1,
-                "created_on": {
-                    "__datetime__": "2019-07-05T12:34:14"
-                },
-                "created_by_fk": 1,
-                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 1}",
+                "created_by_fk": null,
+                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 2, \"import_time\": 1562673685}",
                 "description": null,
                 "dashboard_title": "Pizza Survey",
                 "changed_on": {
-                    "__datetime__": "2019-07-05T12:52:22"
+                    "__datetime__": "2019-07-09T12:01:25"
                 },
-                "changed_by_fk": 1,
+                "changed_by_fk": null,
                 "slug": null,
                 "slices": [
                     {
                         "__Slice__": {
-                            "datasource_id": 1,
-                            "id": 1,
+                            "datasource_id": 2,
+                            "id": 2,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:34:14"
+                                "__datetime__": "2019-07-09T12:01:25"
                             },
-                            "created_by_fk": 1,
-                            "perm": "[main].[pizza_survey](id:1)",
+                            "created_by_fk": null,
+                            "perm": "[main].[pizza_survey](id:2)",
                             "description": null,
                             "viz_type": "big_number_total",
                             "datasource_type": "table",
                             "slice_name": "Visited restaurants",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T13:02:43"
+                                "__datetime__": "2019-07-09T12:11:37"
                             },
                             "changed_by_fk": 1,
                             "cache_timeout": null,
-                            "params": "{\"datasource\": \"1__table\", \"viz_type\": \"big_number_total\", \"url_params\": {}, \"granularity_sqla\": \"date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metric\": \"count\", \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"visited\", \"operator\": \"==\", \"comparator\": \"yes\", \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_nkiyncwgjyf_95rjrknge2n\"}], \"subheader\": \"Restaurants visited\", \"y_axis_format\": \".3s\", \"remote_id\": 1, \"datasource_name\": \"pizza_survey\", \"schema\": \"pizza_survey\", \"database_name\": \"main\"}",
+                            "params": "{\"datasource\": \"1__table\", \"viz_type\": \"big_number_total\", \"url_params\": {}, \"granularity_sqla\": \"date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metric\": \"count\", \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"visited\", \"operator\": \"==\", \"comparator\": \"yes\", \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_nkiyncwgjyf_95rjrknge2n\"}], \"subheader\": \"Restaurants visited\", \"y_axis_format\": \".3s\", \"remote_id\": 2, \"datasource_name\": \"pizza_survey\", \"schema\": \"pizza_survey\", \"database_name\": \"main\", \"import_time\": 1562673685}",
                             "datasource_name": "pizza_survey"
                         }
                     },
                     {
                         "__Slice__": {
-                            "datasource_id": 1,
-                            "id": 2,
+                            "datasource_id": 2,
+                            "id": 3,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:35:51"
+                                "__datetime__": "2019-07-09T12:01:25"
                             },
-                            "created_by_fk": 1,
-                            "perm": "[main].[pizza_survey](id:1)",
+                            "created_by_fk": null,
+                            "perm": "[main].[pizza_survey](id:2)",
                             "description": null,
                             "viz_type": "dist_bar",
                             "datasource_type": "table",
                             "slice_name": "Restaurants visited",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T13:02:43"
+                                "__datetime__": "2019-07-09T12:11:37"
                             },
                             "changed_by_fk": 1,
                             "cache_timeout": null,
-                            "params": "{\"datasource\": \"1__table\", \"viz_type\": \"dist_bar\", \"url_params\": {}, \"granularity_sqla\": \"date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metrics\": [\"count\"], \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"borough\", \"operator\": \"!=\", \"comparator\": \"NULL\", \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_soo36mj4jh_wy4ssj00mp9\"}], \"groupby\": [\"visited\"], \"columns\": [], \"row_limit\": 10000, \"contribution\": false, \"color_scheme\": \"bnbColors\", \"show_legend\": true, \"show_bar_value\": false, \"bar_stacked\": false, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": false, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"remote_id\": 2, \"datasource_name\": \"pizza_survey\", \"schema\": \"pizza_survey\", \"database_name\": \"main\"}",
+                            "params": "{\"datasource\": \"1__table\", \"viz_type\": \"dist_bar\", \"url_params\": {}, \"granularity_sqla\": \"date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metrics\": [\"count\"], \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"borough\", \"operator\": \"!=\", \"comparator\": \"NULL\", \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_soo36mj4jh_wy4ssj00mp9\"}], \"groupby\": [\"visited\"], \"columns\": [], \"row_limit\": 10000, \"contribution\": false, \"color_scheme\": \"bnbColors\", \"show_legend\": true, \"show_bar_value\": false, \"bar_stacked\": false, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": false, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"remote_id\": 3, \"datasource_name\": \"pizza_survey\", \"schema\": \"pizza_survey\", \"database_name\": \"main\", \"import_time\": 1562673685}",
                             "datasource_name": "pizza_survey"
                         }
                     },
                     {
                         "__Slice__": {
-                            "datasource_id": 1,
-                            "id": 3,
+                            "datasource_id": 2,
+                            "id": 4,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:37:13"
+                                "__datetime__": "2019-07-09T12:01:25"
                             },
-                            "created_by_fk": 1,
-                            "perm": "[main].[pizza_survey](id:1)",
+                            "created_by_fk": null,
+                            "perm": "[main].[pizza_survey](id:2)",
                             "description": null,
                             "viz_type": "dist_bar",
                             "datasource_type": "table",
                             "slice_name": "Pizza restaurants per borough",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T13:02:43"
+                                "__datetime__": "2019-07-09T12:11:37"
                             },
                             "changed_by_fk": 1,
                             "cache_timeout": null,
-                            "params": "{\"datasource\": \"1__table\", \"viz_type\": \"dist_bar\", \"url_params\": {}, \"granularity_sqla\": \"date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metrics\": [\"count\"], \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"borough\", \"operator\": \"!=\", \"comparator\": \"NULL\", \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_soo36mj4jh_wy4ssj00mp9\"}], \"groupby\": [\"visited\"], \"columns\": [\"borough\"], \"row_limit\": 10000, \"contribution\": false, \"color_scheme\": \"bnbColors\", \"show_legend\": true, \"show_bar_value\": false, \"bar_stacked\": false, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": false, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"remote_id\": 3, \"datasource_name\": \"pizza_survey\", \"schema\": \"pizza_survey\", \"database_name\": \"main\"}",
+                            "params": "{\"datasource\": \"1__table\", \"viz_type\": \"dist_bar\", \"url_params\": {}, \"granularity_sqla\": \"date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metrics\": [\"count\"], \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"borough\", \"operator\": \"!=\", \"comparator\": \"NULL\", \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_soo36mj4jh_wy4ssj00mp9\"}], \"groupby\": [\"visited\"], \"columns\": [\"borough\"], \"row_limit\": 10000, \"contribution\": false, \"color_scheme\": \"bnbColors\", \"show_legend\": true, \"show_bar_value\": false, \"bar_stacked\": false, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": false, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"remote_id\": 4, \"datasource_name\": \"pizza_survey\", \"schema\": \"pizza_survey\", \"database_name\": \"main\", \"import_time\": 1562673685}",
                             "datasource_name": "pizza_survey"
                         }
                     },
                     {
                         "__Slice__": {
-                            "datasource_id": 3,
-                            "id": 4,
+                            "datasource_id": 4,
+                            "id": 5,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:51:17"
+                                "__datetime__": "2019-07-09T12:01:25"
                             },
-                            "created_by_fk": 1,
-                            "perm": "[None].[Admin Admin-Untitled Query-yJlRZGOiJ](id:3)",
+                            "created_by_fk": null,
+                            "perm": "[main].[Admin Admin-Untitled Query-yJlRZGOiJ](id:4)",
                             "description": null,
                             "viz_type": "pie",
                             "datasource_type": "table",
                             "slice_name": "Restaurants rating",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T13:02:43"
+                                "__datetime__": "2019-07-09T12:11:37"
                             },
                             "changed_by_fk": 1,
                             "cache_timeout": null,
-                            "params": "{\"datasource\": \"3__table\", \"viz_type\": \"pie\", \"granularity_sqla\": null, \"time_grain_sqla\": \"P1D\", \"time_range\": \"100 years ago : \", \"metric\": {\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 20, \"column_name\": \"count\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": true, \"groupby\": true, \"is_dttm\": false, \"type\": \"INT\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_count\"}, \"aggregate\": \"SUM\", \"sqlExpression\": null, \"hasCustomLabel\": false, \"fromFormData\": false, \"label\": \"SUM(count)\", \"optionName\": \"metric_xukjenw8vc_rjfo3dpaeyj\"}, \"adhoc_filters\": [], \"groupby\": [\"stars\"], \"row_limit\": 1000, \"pie_label_type\": \"percent\", \"donut\": false, \"show_legend\": true, \"show_labels\": true, \"labels_outside\": false, \"color_scheme\": \"bnbColors\", \"remote_id\": 4, \"datasource_name\": \"public.Admin Admin-Untitled Query-yJlRZGOiJ\", \"schema\": \"public.Admin Admin-Untitled Query-yJlRZGOiJ\", \"database_name\": \"main\"}",
+                            "params": "{\"datasource\": \"3__table\", \"viz_type\": \"pie\", \"granularity_sqla\": null, \"time_grain_sqla\": \"P1D\", \"time_range\": \"100 years ago : \", \"metric\": {\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 20, \"column_name\": \"count\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": true, \"groupby\": true, \"is_dttm\": false, \"type\": \"INT\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_count\"}, \"aggregate\": \"SUM\", \"sqlExpression\": null, \"hasCustomLabel\": false, \"fromFormData\": false, \"label\": \"SUM(count)\", \"optionName\": \"metric_xukjenw8vc_rjfo3dpaeyj\"}, \"adhoc_filters\": [], \"groupby\": [\"stars\"], \"row_limit\": 1000, \"pie_label_type\": \"percent\", \"donut\": false, \"show_legend\": true, \"show_labels\": true, \"labels_outside\": false, \"color_scheme\": \"bnbColors\", \"remote_id\": 5, \"datasource_name\": \"public.Admin Admin-Untitled Query-yJlRZGOiJ\", \"schema\": \"public.Admin Admin-Untitled Query-yJlRZGOiJ\", \"database_name\": \"main\", \"import_time\": 1562673685}",
                             "datasource_name": "public.Admin Admin-Untitled Query-yJlRZGOiJ"
                         }
                     }
@@ -157,10 +114,10 @@
         {
             "__SqlaTable__": {
                 "default_endpoint": null,
-                "created_by_fk": 1,
-                "main_dttm_col": "date",
+                "created_by_fk": null,
+                "main_dttm_col": null,
                 "is_featured": false,
-                "changed_by_fk": 1,
+                "changed_by_fk": null,
                 "database_id": 1,
                 "filter_select_enabled": false,
                 "fetch_values_predicate": null,
@@ -168,16 +125,162 @@
                 "user_id": null,
                 "cache_timeout": null,
                 "created_on": {
-                    "__datetime__": "2019-07-05T12:31:12"
+                    "__datetime__": "2019-07-09T12:01:25"
+                },
+                "schema": "public",
+                "params": "{\"remote_id\": 4, \"database_name\": \"main\", \"import_time\": 1562673685}",
+                "changed_on": {
+                    "__datetime__": "2019-07-09T12:01:25"
+                },
+                "sql": "SELECT CASE \n      WHEN stars = 1  THEN '1 star'\n      WHEN stars = 2  THEN '2 star'\n      WHEN stars = 3  THEN '3 star'\n      WHEN stars = 4  THEN '4 star'\n      WHEN stars = 5  THEN '5 star'\n      ELSE NULL\n      END AS stars, COUNT(*) AS count\nFROM pizza_survey\nWHERE borough != 'NULL'\nGROUP BY stars\nORDER BY stars DESC\nLIMIT 10000",
+                "perm": "[main].[Admin Admin-Untitled Query-yJlRZGOiJ](id:4)",
+                "id": 4,
+                "is_sqllab_view": false,
+                "table_name": "Admin Admin-Untitled Query-yJlRZGOiJ",
+                "description": null,
+                "template_params": "{}",
+                "database": {
+                    "__Database__": {
+                        "allow_run_async": false,
+                        "verbose_name": null,
+                        "impersonate_user": false,
+                        "allow_csv_upload": true,
+                        "database_name": "main",
+                        "created_by_fk": null,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "postgresql+psycopg2://admin:XXXXXXXXXX@db:5432/flow_results",
+                        "changed_by_fk": null,
+                        "allow_dml": false,
+                        "password": "p@ssw0rd",
+                        "force_ctas_schema": null,
+                        "cache_timeout": null,
+                        "created_on": {
+                            "__datetime__": "2019-07-09T12:01:16"
+                        },
+                        "allow_multi_schema_metadata_fetch": true,
+                        "select_as_create_table_as": false,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "changed_on": {
+                            "__datetime__": "2019-07-09T12:01:31"
+                        },
+                        "expose_in_sqllab": true,
+                        "id": 1,
+                        "perm": "[main].(id:1)",
+                        "allow_run_sync": true
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:25"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:25"
+                            },
+                            "id": 28,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "stars",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": null,
+                            "description": null,
+                            "type": "STRING",
+                            "table_id": 4,
+                            "groupby": true
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:25"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:25"
+                            },
+                            "id": 29,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "count",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": true,
+                            "is_active": true,
+                            "changed_by_fk": null,
+                            "description": null,
+                            "type": "INT",
+                            "table_id": 4,
+                            "groupby": true
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "id": 14,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:25"
+                            },
+                            "created_by_fk": null,
+                            "table_id": 4,
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "metric_type": null,
+                            "metric_name": "count",
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:25"
+                            },
+                            "changed_by_fk": null,
+                            "expression": "count(*)",
+                            "d3format": null,
+                            "description": null,
+                            "verbose_name": null
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "default_endpoint": null,
+                "created_by_fk": null,
+                "main_dttm_col": "date",
+                "is_featured": false,
+                "changed_by_fk": null,
+                "database_id": 1,
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "cache_timeout": null,
+                "created_on": {
+                    "__datetime__": "2019-07-09T12:01:16"
                 },
                 "schema": "",
-                "params": "{\"remote_id\": 1, \"database_name\": \"main\"}",
+                "params": "{\"remote_id\": 2, \"database_name\": \"main\", \"import_time\": 1562673685}",
                 "changed_on": {
-                    "__datetime__": "2019-07-05T12:31:12"
+                    "__datetime__": "2019-07-09T12:01:25"
                 },
                 "sql": null,
-                "perm": "[main].[pizza_survey](id:1)",
-                "id": 1,
+                "perm": "[main].[pizza_survey](id:2)",
+                "id": 2,
                 "is_sqllab_view": false,
                 "table_name": "pizza_survey",
                 "description": null,
@@ -198,13 +301,13 @@
                         "force_ctas_schema": null,
                         "cache_timeout": null,
                         "created_on": {
-                            "__datetime__": "2019-07-05T12:26:55"
+                            "__datetime__": "2019-07-09T12:01:16"
                         },
                         "allow_multi_schema_metadata_fetch": true,
                         "select_as_create_table_as": false,
-                        "extra": "{\n    \"metadata_params\": {},\n    \"engine_params\": {},\n    \"metadata_cache_timeout\": {},\n    \"schemas_allowed_for_csv_upload\": []\n}\n",
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
                         "changed_on": {
-                            "__datetime__": "2019-07-05T12:26:55"
+                            "__datetime__": "2019-07-09T12:01:31"
                         },
                         "expose_in_sqllab": true,
                         "id": 1,
@@ -217,29 +320,179 @@
                         "__TableColumn__": {
                             "count_distinct": false,
                             "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "id": 9,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "_location_accuracy",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": null,
+                            "description": null,
+                            "type": "DOUBLE PRECISION",
+                            "table_id": 2,
+                            "groupby": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "id": 10,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "_location_altitude",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": null,
+                            "description": null,
+                            "type": "DOUBLE PRECISION",
+                            "table_id": 2,
+                            "groupby": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "id": 11,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "_location_latitude",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": null,
+                            "description": null,
+                            "type": "DOUBLE PRECISION",
+                            "table_id": 2,
+                            "groupby": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "id": 12,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "_location_longitude",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": null,
+                            "description": null,
+                            "type": "DOUBLE PRECISION",
+                            "table_id": 2,
+                            "groupby": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "created_on": {
+                                "__datetime__": "2019-07-09T12:01:17"
+                            },
+                            "id": 13,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "stars",
+                            "database_expression": null,
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": null,
+                            "description": null,
+                            "type": "DOUBLE PRECISION",
+                            "table_id": 2,
+                            "groupby": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "count_distinct": false,
+                            "is_dttm": false,
                             "sum": false,
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
                             "expression": "",
                             "avg": false,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "id": 1,
+                            "id": 14,
                             "python_date_format": null,
                             "max": false,
-                            "column_name": "submission_uuid",
+                            "column_name": "borough",
                             "database_expression": null,
                             "min": false,
                             "verbose_name": null,
-                            "created_by_fk": 1,
+                            "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
-                            "changed_by_fk": 1,
+                            "changed_by_fk": null,
                             "description": null,
                             "type": "VARCHAR",
-                            "table_id": 1,
+                            "table_id": 2,
                             "groupby": true
                         }
                     },
@@ -249,57 +502,27 @@
                             "is_dttm": true,
                             "sum": false,
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
                             "expression": "",
                             "avg": false,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "id": 2,
+                            "id": 15,
                             "python_date_format": null,
                             "max": false,
                             "column_name": "date",
                             "database_expression": null,
                             "min": false,
                             "verbose_name": null,
-                            "created_by_fk": 1,
+                            "created_by_fk": null,
                             "filterable": false,
                             "is_active": true,
-                            "changed_by_fk": 1,
+                            "changed_by_fk": null,
                             "description": null,
                             "type": "DATE",
-                            "table_id": 1,
-                            "groupby": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": true,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "expression": "",
-                            "avg": true,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "id": 3,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "stars",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": false,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "DOUBLE PRECISION",
-                            "table_id": 1,
+                            "table_id": 2,
                             "groupby": false
                         }
                     },
@@ -309,57 +532,27 @@
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
                             "expression": "",
                             "avg": false,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "id": 4,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "borough",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "VARCHAR",
-                            "table_id": 1,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "id": 5,
+                            "id": 16,
                             "python_date_format": null,
                             "max": false,
                             "column_name": "name",
                             "database_expression": null,
                             "min": false,
                             "verbose_name": null,
-                            "created_by_fk": 1,
+                            "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
-                            "changed_by_fk": 1,
+                            "changed_by_fk": null,
                             "description": null,
                             "type": "VARCHAR",
-                            "table_id": 1,
+                            "table_id": 2,
                             "groupby": true
                         }
                     },
@@ -369,27 +562,27 @@
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
                             "expression": "",
                             "avg": false,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "id": 6,
+                            "id": 17,
                             "python_date_format": null,
                             "max": false,
-                            "column_name": "visited",
+                            "column_name": "submission_uuid",
                             "database_expression": null,
                             "min": false,
                             "verbose_name": null,
-                            "created_by_fk": 1,
+                            "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
-                            "changed_by_fk": 1,
+                            "changed_by_fk": null,
                             "description": null,
                             "type": "VARCHAR",
-                            "table_id": 1,
+                            "table_id": 2,
                             "groupby": true
                         }
                     },
@@ -397,163 +590,51 @@
                         "__TableColumn__": {
                             "count_distinct": false,
                             "is_dttm": false,
-                            "sum": true,
+                            "sum": false,
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
                             "expression": "",
-                            "avg": true,
+                            "avg": false,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "id": 7,
+                            "id": 18,
                             "python_date_format": null,
                             "max": false,
-                            "column_name": "_location_latitude",
+                            "column_name": "visited",
                             "database_expression": null,
                             "min": false,
                             "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": false,
+                            "created_by_fk": null,
+                            "filterable": true,
                             "is_active": true,
-                            "changed_by_fk": 1,
+                            "changed_by_fk": null,
                             "description": null,
-                            "type": "DOUBLE PRECISION",
-                            "table_id": 1,
-                            "groupby": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": true,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "expression": "",
-                            "avg": true,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "id": 8,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "_location_longitude",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": false,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "DOUBLE PRECISION",
-                            "table_id": 1,
-                            "groupby": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": true,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "expression": "",
-                            "avg": true,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "id": 9,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "_location_altitude",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": false,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "DOUBLE PRECISION",
-                            "table_id": 1,
-                            "groupby": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": true,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "expression": "",
-                            "avg": true,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "id": 10,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "_location_accuracy",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": false,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "DOUBLE PRECISION",
-                            "table_id": 1,
-                            "groupby": false
+                            "type": "VARCHAR",
+                            "table_id": 2,
+                            "groupby": true
                         }
                     }
                 ],
                 "metrics": [
                     {
                         "__SqlMetric__": {
-                            "id": 1,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "created_by_fk": 1,
-                            "table_id": 1,
-                            "warning_text": null,
-                            "is_restricted": false,
-                            "metric_type": "sum",
-                            "metric_name": "sum__stars",
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
-                            },
-                            "changed_by_fk": 1,
-                            "expression": "SUM(stars)",
-                            "d3format": null,
-                            "description": null,
-                            "verbose_name": null
-                        }
-                    },
-                    {
-                        "__SqlMetric__": {
                             "id": 2,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
                             "metric_type": "avg",
-                            "metric_name": "avg__stars",
+                            "metric_name": "avg___location_accuracy",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "AVG(stars)",
+                            "changed_by_fk": null,
+                            "expression": "AVG(_location_accuracy)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
@@ -563,19 +644,19 @@
                         "__SqlMetric__": {
                             "id": 3,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
-                            "metric_type": "sum",
-                            "metric_name": "sum___location_latitude",
+                            "metric_type": "avg",
+                            "metric_name": "avg___location_altitude",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "SUM(_location_latitude)",
+                            "changed_by_fk": null,
+                            "expression": "AVG(_location_altitude)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
@@ -585,18 +666,18 @@
                         "__SqlMetric__": {
                             "id": 4,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
                             "metric_type": "avg",
                             "metric_name": "avg___location_latitude",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "changed_by_fk": 1,
+                            "changed_by_fk": null,
                             "expression": "AVG(_location_latitude)",
                             "d3format": null,
                             "description": null,
@@ -607,19 +688,19 @@
                         "__SqlMetric__": {
                             "id": 5,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
-                            "metric_type": "sum",
-                            "metric_name": "sum___location_longitude",
+                            "metric_type": "avg",
+                            "metric_name": "avg___location_longitude",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "SUM(_location_longitude)",
+                            "changed_by_fk": null,
+                            "expression": "AVG(_location_longitude)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
@@ -629,19 +710,19 @@
                         "__SqlMetric__": {
                             "id": 6,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
                             "metric_type": "avg",
-                            "metric_name": "avg___location_longitude",
+                            "metric_name": "avg__stars",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:16"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "AVG(_location_longitude)",
+                            "changed_by_fk": null,
+                            "expression": "AVG(stars)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
@@ -651,41 +732,41 @@
                         "__SqlMetric__": {
                             "id": 7,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
-                            "metric_type": "sum",
-                            "metric_name": "sum___location_altitude",
+                            "metric_type": "count",
+                            "metric_name": "count",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "SUM(_location_altitude)",
+                            "changed_by_fk": null,
+                            "expression": "COUNT(*)",
                             "d3format": null,
                             "description": null,
-                            "verbose_name": null
+                            "verbose_name": "COUNT(*)"
                         }
                     },
                     {
                         "__SqlMetric__": {
                             "id": 8,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
-                            "metric_type": "avg",
-                            "metric_name": "avg___location_altitude",
+                            "metric_type": "sum",
+                            "metric_name": "sum___location_accuracy",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "AVG(_location_altitude)",
+                            "changed_by_fk": null,
+                            "expression": "SUM(_location_accuracy)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
@@ -695,19 +776,19 @@
                         "__SqlMetric__": {
                             "id": 9,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
                             "metric_type": "sum",
-                            "metric_name": "sum___location_accuracy",
+                            "metric_name": "sum___location_altitude",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "SUM(_location_accuracy)",
+                            "changed_by_fk": null,
+                            "expression": "SUM(_location_altitude)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
@@ -717,19 +798,19 @@
                         "__SqlMetric__": {
                             "id": 10,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
-                            "metric_type": "avg",
-                            "metric_name": "avg___location_accuracy",
+                            "metric_type": "sum",
+                            "metric_name": "sum___location_latitude",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "AVG(_location_accuracy)",
+                            "changed_by_fk": null,
+                            "expression": "SUM(_location_latitude)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
@@ -739,521 +820,41 @@
                         "__SqlMetric__": {
                             "id": 11,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 1,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
-                            "metric_type": "count",
-                            "metric_name": "count",
+                            "metric_type": "sum",
+                            "metric_name": "sum___location_longitude",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:31:12"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "COUNT(*)",
-                            "d3format": null,
-                            "description": null,
-                            "verbose_name": "COUNT(*)"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "__SqlaTable__": {
-                "default_endpoint": null,
-                "created_by_fk": 1,
-                "main_dttm_col": null,
-                "is_featured": false,
-                "changed_by_fk": 1,
-                "database_id": 1,
-                "filter_select_enabled": false,
-                "fetch_values_predicate": null,
-                "offset": 0,
-                "user_id": null,
-                "cache_timeout": null,
-                "created_on": {
-                    "__datetime__": "2019-07-05T12:57:32"
-                },
-                "schema": "public",
-                "params": "{\"remote_id\": 4, \"database_name\": \"main\"}",
-                "changed_on": {
-                    "__datetime__": "2019-07-05T12:57:32"
-                },
-                "sql": "SELECT * FROM form_details ORDER BY date_added",
-                "perm": "[None].[Admin Admin-Untitled Query-M78kYOVTe](id:4)",
-                "id": 4,
-                "is_sqllab_view": true,
-                "table_name": "Admin Admin-Untitled Query-M78kYOVTe",
-                "description": null,
-                "template_params": "{}",
-                "columns": [
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": true,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 21,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "form_id",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "STRING",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 22,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "form_version",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "OBJECT",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 23,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "table_name",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "STRING",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": true,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 24,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "token",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "STRING",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 25,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "metadata_details",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "OBJECT",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 26,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "geotypes",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "OBJECT",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 27,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "long_field_names_map",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "OBJECT",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 28,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "fields_to_name_label_map",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "OBJECT",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": true,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "id": 29,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "date_added",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "STRING",
-                            "table_id": 4,
-                            "groupby": true
-                        }
-                    }
-                ],
-                "metrics": [
-                    {
-                        "__SqlMetric__": {
-                            "id": 14,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "created_by_fk": 1,
-                            "table_id": 4,
-                            "warning_text": null,
-                            "is_restricted": false,
-                            "metric_type": null,
-                            "metric_name": "count",
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:57:32"
-                            },
-                            "changed_by_fk": 1,
-                            "expression": "count(*)",
+                            "changed_by_fk": null,
+                            "expression": "SUM(_location_longitude)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
                         }
-                    }
-                ],
-                "database": {
-                    "__Database__": {
-                        "allow_run_async": false,
-                        "verbose_name": null,
-                        "impersonate_user": false,
-                        "allow_csv_upload": true,
-                        "database_name": "main",
-                        "created_by_fk": null,
-                        "allow_ctas": false,
-                        "sqlalchemy_uri": "postgresql+psycopg2://admin:XXXXXXXXXX@db:5432/flow_results",
-                        "changed_by_fk": null,
-                        "allow_dml": false,
-                        "password": "p@ssw0rd",
-                        "force_ctas_schema": null,
-                        "cache_timeout": null,
-                        "created_on": {
-                            "__datetime__": "2019-07-05T12:26:55"
-                        },
-                        "allow_multi_schema_metadata_fetch": true,
-                        "select_as_create_table_as": false,
-                        "extra": "{\n    \"metadata_params\": {},\n    \"engine_params\": {},\n    \"metadata_cache_timeout\": {},\n    \"schemas_allowed_for_csv_upload\": []\n}\n",
-                        "changed_on": {
-                            "__datetime__": "2019-07-05T12:26:55"
-                        },
-                        "expose_in_sqllab": true,
-                        "id": 1,
-                        "perm": "[main].(id:1)",
-                        "allow_run_sync": true
-                    }
-                }
-            }
-        },
-        {
-            "__SqlaTable__": {
-                "default_endpoint": null,
-                "created_by_fk": 1,
-                "main_dttm_col": null,
-                "is_featured": false,
-                "changed_by_fk": 1,
-                "database_id": 1,
-                "filter_select_enabled": false,
-                "fetch_values_predicate": null,
-                "offset": 0,
-                "user_id": null,
-                "cache_timeout": null,
-                "created_on": {
-                    "__datetime__": "2019-07-05T12:49:31"
-                },
-                "schema": "public",
-                "params": "{\"remote_id\": 3, \"database_name\": \"main\"}",
-                "changed_on": {
-                    "__datetime__": "2019-07-05T12:49:32"
-                },
-                "sql": "SELECT CASE \n      WHEN stars = 1  THEN '1 star'\n      WHEN stars = 2  THEN '2 star'\n      WHEN stars = 3  THEN '3 star'\n      WHEN stars = 4  THEN '4 star'\n      WHEN stars = 5  THEN '5 star'\n      ELSE NULL\n      END AS stars, COUNT(*) AS count\nFROM pizza_survey\nWHERE borough != 'NULL'\nGROUP BY stars\nORDER BY stars DESC\nLIMIT 10000",
-                "perm": "[None].[Admin Admin-Untitled Query-yJlRZGOiJ](id:3)",
-                "id": 3,
-                "is_sqllab_view": true,
-                "table_name": "Admin Admin-Untitled Query-yJlRZGOiJ",
-                "description": null,
-                "template_params": "{}",
-                "database": {
-                    "__Database__": {
-                        "allow_run_async": false,
-                        "verbose_name": null,
-                        "impersonate_user": false,
-                        "allow_csv_upload": true,
-                        "database_name": "main",
-                        "created_by_fk": null,
-                        "allow_ctas": false,
-                        "sqlalchemy_uri": "postgresql+psycopg2://admin:XXXXXXXXXX@db:5432/flow_results",
-                        "changed_by_fk": null,
-                        "allow_dml": false,
-                        "password": "p@ssw0rd",
-                        "force_ctas_schema": null,
-                        "cache_timeout": null,
-                        "created_on": {
-                            "__datetime__": "2019-07-05T12:26:55"
-                        },
-                        "allow_multi_schema_metadata_fetch": true,
-                        "select_as_create_table_as": false,
-                        "extra": "{\n    \"metadata_params\": {},\n    \"engine_params\": {},\n    \"metadata_cache_timeout\": {},\n    \"schemas_allowed_for_csv_upload\": []\n}\n",
-                        "changed_on": {
-                            "__datetime__": "2019-07-05T12:26:55"
-                        },
-                        "expose_in_sqllab": true,
-                        "id": 1,
-                        "perm": "[main].(id:1)",
-                        "allow_run_sync": true
-                    }
-                },
-                "columns": [
-                    {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:49:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:49:32"
-                            },
-                            "id": 19,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "stars",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "STRING",
-                            "table_id": 3,
-                            "groupby": true
-                        }
                     },
                     {
-                        "__TableColumn__": {
-                            "count_distinct": false,
-                            "is_dttm": false,
-                            "sum": false,
-                            "changed_on": {
-                                "__datetime__": "2019-07-05T12:49:32"
-                            },
-                            "expression": "",
-                            "avg": false,
-                            "created_on": {
-                                "__datetime__": "2019-07-05T12:49:32"
-                            },
-                            "id": 20,
-                            "python_date_format": null,
-                            "max": false,
-                            "column_name": "count",
-                            "database_expression": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": 1,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "type": "INT",
-                            "table_id": 3,
-                            "groupby": true
-                        }
-                    }
-                ],
-                "metrics": [
-                    {
                         "__SqlMetric__": {
-                            "id": 13,
+                            "id": 12,
                             "created_on": {
-                                "__datetime__": "2019-07-05T12:49:32"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "created_by_fk": 1,
-                            "table_id": 3,
+                            "created_by_fk": null,
+                            "table_id": 2,
                             "warning_text": null,
                             "is_restricted": false,
-                            "metric_type": null,
-                            "metric_name": "count",
+                            "metric_type": "sum",
+                            "metric_name": "sum__stars",
                             "changed_on": {
-                                "__datetime__": "2019-07-05T12:49:32"
+                                "__datetime__": "2019-07-09T12:01:17"
                             },
-                            "changed_by_fk": 1,
-                            "expression": "count(*)",
+                            "changed_by_fk": null,
+                            "expression": "SUM(stars)",
                             "d3format": null,
                             "description": null,
                             "verbose_name": null
