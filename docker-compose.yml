@@ -13,6 +13,7 @@ services:
       - "9090:9090"
     volumes:
       - ./nifi:/config/
+      - ./nifi/avro:/opt/nifi/nifi-current/avro
     entrypoint: >
       bash -c "cp /config/scripts/start.sh ./ && bash start.sh"
     environment:
@@ -45,3 +46,7 @@ services:
       && superset init
       && superset runserver -d"
     depends_on: [db]
+
+volumes:
+  avro:
+    driver: local
