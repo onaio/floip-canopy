@@ -13,12 +13,16 @@ The schema for the table is derived from the descriptor of a package retrieved f
 }
 ```
 
+
 > Note on API authentication
 > For APIs that require authentication, edit processors that make GET requests to the API for survey and response named `GET flow results survey from API` and `GET flow results responses from API`. Enter the Basic Authentication Username and Basic Authentication Password or add a property for Authorization token by clicking + in properties.
 
 
+
 2. __Survey and response JSON feed__
 For JSON feed, under `Flow results JSON` processor, add the survey JSON to survey attribute and response JSON to the response attribute and custom text property.
+
+
 
 3. __Pushed submissions__
 To push a FLOIP submission, a POST request is made to NiFi's URL port 9090 and `floip` endpoint. The package name or initially defined table name should be specified as part of the request headers which determines the Postgres table to be updated. Below is an example of a curl request:
@@ -29,6 +33,7 @@ curl http://localhost:9090/floip -H "package_name: pizza_survey" -d '[["2019-07-
 ```
 
 
+
 ## Python Modules
 The flow uses four scripts to flatten and transform flow results schema and responses:
 
@@ -36,12 +41,14 @@ The flow uses four scripts to flatten and transform flow results schema and resp
 1. __Create table statement parser__
 This script takes in flow-results formatted survey together with table name if defined as parameters and returns a valid Postgres create table statement. The main function iterates through the `questions` object, getting column names from question key and column type from the type value. The column types are substituted from a dictionary containing a map of schema types to valid Postgres types. In the case of the table name not defined, the package attribute name is used. Below is an example of pizza survey schema:
 
+<img src="https://github.com/onaio/floip-canopy/blob/documentation/docs/images/pizza_survey_schema.png" alt="FLOIP flowchart" width="350" height="350">
 
 This returns the following create table statement:
 ```
 CREATE TABLE pizza_survey(submission_uuid VARCHAR, date DATE, stars DOUBLE PRECISION, borough VARCHAR, name VARCHAR, visited VARCHAR, _location_latitude DOUBLE PRECISION, _location_longitude DOUBLE PRECISION, _location_altitude DOUBLE PRECISION, _location_accuracy DOUBLE PRECISION);
 ```
  
+
 2. __Transform flow responses into dictionary__
 
 A single flow-results response submission is transformed into a map between all questions to the corresponding value. The function creates a map between the question name(fifth element) and the response value (sixth element) then adds the session ID as the submission ID and returns the object created. For example the following submission is transformed as follows:
@@ -60,6 +67,7 @@ Is transformed to:
 }
 ```
  
+
 3. __Flatten JSON__
 
 The returned dictionary from the script above may have nested data. This is because some of the responses capture repeat group data in the context of ona forms. The flatten_json script flattens this data. This function returns a list of flattened dictionaries. For example:
@@ -92,6 +100,8 @@ The above JSON is flattened to:
         "group1_ae54d7": "strawberry"
     }
 ]
+
+
 4. __Transform geopoints__
  
 This script receives an individual flattened dictionary. A geopoints object holds the latitude, longitude, altitude and accuracy details. These values are added as individual key-value pairs in the dictionary and returns a single flattened dictionary.
@@ -99,4 +109,4 @@ This script receives an individual flattened dictionary. A geopoints object hold
 
 ## Flow results package flowchart
 
-<img src="https://github.com/onaio/floip-canopy/blob/documentation/docs/images/floip-flowchart.png" alt="FLOIP flowchart" width="350" height="1500">
+<img src="https://github.com/onaio/floip-canopy/blob/documentation/docs/images/floip_flowchart.png" alt="FLOIP flowchart" width="700" height="1500">
