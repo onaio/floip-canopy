@@ -1,0 +1,118 @@
+{
+    "data": {
+      "type": "packages",
+      "id": "b91bc28ee6584a3d8b0f92a6c22d16f5",
+      "attributes": {
+        "title": "Pizza Survey!",
+        "profile": "flow-results-package",
+        "created": "2015-02-18T21:18:51.196462Z",
+        "modified": "2017-04-28T12:12:23.233701Z",
+        "flow_results_specification_version": "1.0.0-rc1",
+        "resources": [
+          {
+            "path": "https://api.ona.io/api/v1/flow-results/packages/b91bc28ee6584a3d8b0f92a6c22d16f5/responses",
+            "name": "pizza_survey-data",
+            "mediatype": "application/json",
+            "encoding": "utf-8",
+            "schema": {
+              "language": "eng",
+              "fields": [
+                {
+                  "name": "timestamp",
+                  "title": "Timestamp",
+                  "type": "datetime"
+                },
+                {
+                  "name": "row_id",
+                  "title": "Row ID",
+                  "type": "string"
+                },
+                {
+                  "name": "contact_id",
+                  "title": "Contact ID",
+                  "type": "string"
+                },
+                {
+                  "name": "session_id",
+                  "title": "Session ID",
+                  "type": "string"
+                },
+                {
+                  "name": "question_id",
+                  "title": "Question ID",
+                  "type": "string"
+                },
+                {
+                  "name": "response",
+                  "title": "Response",
+                  "type": "any"
+                },
+                {
+                  "name": "response_metadata",
+                  "title": "Response Metadata",
+                  "type": "object"
+                }
+              ],
+              "questions": {
+                "name": {
+                  "type": "text",
+                  "label": "What's the pizza joint's name?",
+                  "type_options": {
+                    
+                  }
+                },
+                "location": {
+                  "type": "geo_point",
+                  "label": "Where is it?",
+                  "type_options": {
+                    
+                  }
+                },
+                "stars": {
+                  "type": "numeric",
+                  "label": "How many stars is it rated?",
+                  "type_options": {
+                    "range": [
+                      0,
+                      5
+                    ]
+                  }
+                },
+                "borough": {
+                  "type": "select_one",
+                  "label": "What borough is it in?",
+                  "type_options": {
+                    "choices": [
+                      "Manhattan",
+                      "Brooklyn",
+                      "Queens",
+                      "The_Bronx",
+                      "Staten_Island"
+                    ]
+                  }
+                },
+                "visited": {
+                  "type": "select_one",
+                  "label": "Have you been there?",
+                  "type_options": {
+                    "choices": [
+                      "yes",
+                      "no"
+                    ]
+                  }
+                },
+                "date": {
+                  "type": "date",
+                  "label": "When did you eat there?",
+                  "type_options": {
+                    
+                  }
+                }
+              }
+            },
+            "profile": "data-resource"
+          }
+        ]
+      }
+    }
+  }
