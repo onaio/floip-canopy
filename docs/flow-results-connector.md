@@ -39,7 +39,7 @@ The flow uses four scripts to flatten and transform flow results schema and resp
 
 
 1. __Create table statement parser__
-This script takes in flow-results formatted survey together with table name if defined as parameters and returns a valid Postgres create table statement. The main function iterates through the `questions` object, getting column names from question key and column type from the type value. The column types are substituted from a dictionary containing a map of schema types to valid Postgres types. In the case of the table name not defined, the package attribute name is used. For this [pizza survey package descriptor](https://github.com/onaio/floip-canopy/blob/documentation/docs/fixtures/pizza_survey_package_descriptor.json) the following create table statement is returned:
+This [script](https://github.com/onaio/floip-canopy/blob/documentation/nifi/scripts/create_table_statement_parser.py) takes in flow-results formatted survey together with table name if defined as parameters and returns a valid Postgres create table statement. The main function iterates through the `questions` object, getting column names from question key and column type from the type value. The column types are substituted from a dictionary containing a map of schema types to valid Postgres types. In the case of the table name not defined, the package attribute name is used. For this [pizza survey package descriptor](https://github.com/onaio/floip-canopy/blob/documentation/docs/fixtures/pizza_survey_package_descriptor.json) the following create table statement is returned:
 
 ```
 CREATE TABLE pizza_survey(submission_uuid VARCHAR, date DATE, stars DOUBLE PRECISION, borough VARCHAR, name VARCHAR, visited VARCHAR, _location_latitude DOUBLE PRECISION, _location_longitude DOUBLE PRECISION, _location_altitude DOUBLE PRECISION, _location_accuracy DOUBLE PRECISION);
@@ -48,7 +48,7 @@ CREATE TABLE pizza_survey(submission_uuid VARCHAR, date DATE, stars DOUBLE PRECI
 
 2. __Transform package responses__
 
-A single flow-results response submission is transformed into a map between all questions to the corresponding value. The function creates a map between the question name(fifth element) and the response value (sixth element) then adds the session ID as the submission ID and returns the object created. For example the following submission is transformed as follows:
+A single flow-results response submission is transformed into a map between all questions to the corresponding value. The [script](https://github.com/onaio/floip-canopy/blob/documentation/nifi/scripts/transform_package_responses.py) creates a map between the question name(fifth element) and the response value (sixth element) then adds the session ID as the submission ID and returns the object created. For example the following submission is transformed as follows:
 ```
 [
   [ "2017-05-23T13:35:37.356-04:00", 20394823948, 923842093, 10499221, "ae54d3", "female", {"option_order": ["male","female"]} ],
@@ -67,7 +67,7 @@ Is transformed to:
 
 3. __Flatten nested JSON__
 
-The returned dictionary from the script above may have nested data. This is because some of the responses capture repeat group data in the context of ona forms. The flatten_json script flattens this data. This function returns a list of flattened dictionaries. For example:
+The returned dictionary from the script above may have nested data. This is because some of the responses capture repeat group data in the context of ona forms. The [flatten nested json script](https://github.com/onaio/floip-canopy/blob/documentation/nifi/scripts/flatten_nested_json.py) flattens this data. This function returns a list of flattened dictionaries. For example:
 
 ```
 {
@@ -102,7 +102,7 @@ The above JSON is flattened to:
 
 4. __Format geotypes__
  
-This script receives an individual flattened dictionary. A geopoints object holds the latitude, longitude, altitude and accuracy details. These values are added as individual key-value pairs in the dictionary and returns a single flattened dictionary. For example:
+This [script](https://github.com/onaio/floip-canopy/blob/documentation/nifi/scripts/format_geotypes.py) receives an individual flattened dictionary. A geopoints object holds the latitude, longitude, altitude and accuracy details. These values are added as individual key-value pairs in the dictionary and returns a single flattened dictionary. For example:
 
 ```
 {
