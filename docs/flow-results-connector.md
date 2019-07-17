@@ -2,6 +2,8 @@
 
 This connector is designed in Apache NiFi to automate the process of transferring flow-results packaged data to a table in a Postgres database or store AVRO formatted response results on disk. The connector ingests data in three different ways:
 
+<br />
+
 1. __Flow results API endpoint__
 The schema for the table is derived from the descriptor of a package retrieved from `/flow-results/packages/[form_id]`. Once the schema for the table is generated, a table is created in the database. Data is then retrieved from the response endpoint: `/flow-results/packages/[form_id]/responses`. The connector requires a JSON configuration with the keys `form_id`, `base_url` and optionally, the `table_name` the user desires the data to be stored in. The JSON config can is formatted as below:
 
@@ -14,15 +16,15 @@ The schema for the table is derived from the descriptor of a package retrieved f
 ```
 
 
-> Note on API authentication
-> For APIs that require authentication, edit processors that make GET requests to the API for survey and response named `GET flow results survey from API` and `GET flow results responses from API`. Enter the Basic Authentication Username and Basic Authentication Password or add a property for Authorization token by clicking `+` in properties.
+> Note on API authentication:
+> * For APIs that require authentication, edit processors that make GET requests to the API for survey and response named `GET flow results survey from API` and `GET flow results responses from API`. Enter the Basic Authentication Username and Basic Authentication Password or add a property for Authorization token by clicking `+` in properties.
 
-
+<br />
 
 2. __Survey and response JSON feed__
 For JSON feed, under `Flow results JSON` processor, add the survey JSON to survey attribute and response JSON to the response attribute and custom text property.
 
-
+<br />
 
 3. __Published responses__
 To push a FLOIP submission, a POST request is made to NiFi's URL port 9090 and `floip` endpoint. The package name or initially defined table name should be specified as part of the request headers which determines the Postgres table to be updated. Below is an example of a curl request:
@@ -32,19 +34,20 @@ To push a FLOIP submission, a POST request is made to NiFi's URL port 9090 and `
 curl http://localhost:9090/floip -H "package_name: pizza_survey" -d '[["2019-07-09T13:47:05+00:00",1171290623824092,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","date","2019-07-04",null],["2019-07-09T13:47:05+00:00",1171290672224313,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","name","Pizzarea",null],["2019-07-09T13:47:05+00:00",1171290817424982,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","stars",4,null],["2019-07-09T13:47:05+00:00",1171291011025888,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","borough","Manhattan",null],["2019-07-09T13:47:05+00:00",1171291059426117,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","visited","yes",null],["2019-07-09T13:47:05+00:00",1171291156226578,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","location","-1.291449 36.787959 1 1",null]]'
 ```
 
-
+<br />
 
 ## Python Modules
 The flow uses four scripts to flatten and transform flow results schema and responses:
 
 
 1. __Create table statement parser__
+
 This [script](https://github.com/onaio/floip-canopy/blob/documentation/nifi/scripts/create_table_statement_parser.py) takes in flow-results formatted survey together with table name if defined as parameters and returns a valid Postgres create table statement. The main function iterates through the `questions` object, getting column names from question key and column type from the type value. The column types are substituted from a dictionary containing a map of schema types to valid Postgres types. In the case of the table name not defined, the package attribute name is used. For this [pizza survey package descriptor](https://github.com/onaio/floip-canopy/blob/documentation/docs/fixtures/pizza_survey_package_descriptor.json) the following create table statement is returned:
 
 ```
 CREATE TABLE pizza_survey(submission_uuid VARCHAR, date DATE, stars DOUBLE PRECISION, borough VARCHAR, name VARCHAR, visited VARCHAR, _location_latitude DOUBLE PRECISION, _location_longitude DOUBLE PRECISION, _location_altitude DOUBLE PRECISION, _location_accuracy DOUBLE PRECISION);
 ```
- 
+<br />
 
 2. __Transform package responses__
 
@@ -63,7 +66,7 @@ Is transformed to:
     "ae54d7": "chocolate"
 }
 ```
- 
+<br />
 
 3. __Flatten nested JSON__
 
@@ -99,6 +102,7 @@ The above JSON is flattened to:
     }
 ]
 
+<br />
 
 4. __Format geotypes__
  
@@ -121,6 +125,7 @@ The above geopoint is transformed to:
 }
 ```
 
+<br />
 
 ## Flow results package flowchart
 

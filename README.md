@@ -28,7 +28,7 @@ curl http://localhost:9090/floip -H "package_name: pizza_survey" -d '[["2019-07-
 ```
 
 > Note on new submissions:
-> The timestamp should be higher than that already on the dashboards to be considered an update. Edit all the timestamps in each row with the current timestamp.
+> * The timestamp should be higher than that already on the dashboards to be considered an update. Edit all the timestamps in each row with the current timestamp.
 
 
 
