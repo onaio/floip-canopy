@@ -5,11 +5,11 @@ This connector is designed in Apache NiFi to automate the process of transferrin
 <br />
 
 1. __Flow results API endpoint__
-The schema for the table is derived from the descriptor of a package retrieved from `/flow-results/packages/[form_id]`. Once the schema for the table is generated, a table is created in the database. Data is then retrieved from the response endpoint: `/flow-results/packages/[form_id]/responses`. The connector requires a JSON configuration with the keys `form_id`, `base_url` and optionally, the `table_name` the user desires the data to be stored in. The JSON config can is formatted as below:
+The schema for the table is derived from the descriptor of a package retrieved from `/flow-results/packages/[form_uuid]`. Once the schema for the table is generated, a table is created in the database. Data is then retrieved from the response endpoint: `/flow-results/packages/[form_uuid]/responses`. The connector requires a JSON configuration with the keys `form_uuid`, `base_url` and optionally, the `table_name` the user desires the data to be stored in. The JSON config can is formatted as below:
 
 ```
 {
-  "form_id": "[Data package id in UUID format]",
+  "form_uuid": "[Data package id in UUID format]",
   "table_name": "[Preferred Postgres table name]",
   "base_url": "[Base URL to get data from]"	
 }
