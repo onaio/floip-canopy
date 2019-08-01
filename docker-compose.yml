@@ -38,8 +38,8 @@ services:
     volumes:
       - ./superset:/etc/superset
     command: >
-      bash -c "
-      fabmanager create-admin --app superset --username 'admin' --firstname Admin --lastname Admin --email noreply --password 'p@ssw0rd'
+      bash -c "sleep 30
+      && fabmanager create-admin --app superset --username 'admin' --firstname Admin --lastname Admin --email noreply --password 'p@ssw0rd'
       && superset db upgrade
       && superset import_datasources -p /etc/superset/datasources.yaml
       && superset import_dashboards -p /etc/superset/dashboards.json
