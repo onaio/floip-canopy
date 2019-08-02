@@ -20,7 +20,9 @@ Access superset on your browser at http://localhost:8088, use the credentials:
     username: admin
     password: p@ssw0rd
 
-There are 2 ways to update the Pizza Survey dashboard:
+> Set the auto-refresh interval time to 30 seconds on the dashboard by clicking on the arrow down icon `V` next to edit dashboard
+
+There are 2 ways to update the [Pizza Survey dashboard](http://localhost:8088/superset/dashboard/1/):
 
 1. Make submissions on the [Pizza Survey Form](https://enketo.ona.io/::YVTA) and wait for 3 minutes to see the changes reflected
 2. Add new submissions locally by running the following curl command: 
