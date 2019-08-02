@@ -1,6 +1,8 @@
 # FLOIP Results Ingestion with Nifi and Superset
 
-A demo setup of Apache NiFi and superset to ingest a FLOIP Results endpoint and visualization with Apache superset dashboards.
+A demo setup of Apache NiFi to ingest from a FLOIP results endpoint, data storage in Postgres and visualization with Apache superset dashboards. 
+
+The demo sites can be accessed on https://nifi-floip-demo.onalabs.org/nifi/ for NiFi and https://floip-demo.onalabs.org for Superset with the same credentials as the local setup.
 
 
 ## Initialize the Setup
@@ -40,3 +42,6 @@ Access the nifi processor at http://localhost:8080/nifi.
 Avro formated flow results for Pizza Survey is stored in `pizza_survey.avro` file which can be accessed by getting into avro directory.
 
     $ cd nifi/avro
+
+> Ensure the avro directory has permissions to allow Apache NiFi to write to it. On Ubuntu, use the following command:
+     $ **chown -R 1000:1000 avro**
