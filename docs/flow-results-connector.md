@@ -4,9 +4,9 @@ This connector is designed in Apache NiFi to automate the process of transferrin
 
 <br />
 
-1. __Flow results API endpoint__
+1. __Batch pulls from the API__
 
-The schema for the table is derived from the descriptor of a package retrieved from `/flow-results/packages/[form_uuid]`. Once the schema for the table is generated, a table is created in the database. Data is then retrieved from the response endpoint: `/flow-results/packages/[form_uuid]/responses`. The connector requires a JSON configuration in "API configuration for flow results" processor within "API Batch pulls" process group with the keys `form_uuid`, `base_url` and optionally, the `table_name` the user desires the data to be stored in. The JSON config can is formatted as below:
+The API endpoint `/flow-results/packages/[form_uuid]` returns the package descriptor that is used to derive the PostgreSQL table schema. Data is then retrieved from the response endpoint `/flow-results/packages/[form_uuid]/responses` and inserted to the database. The connector requires a JSON configuration in "API configuration for flow results" processor within the "API Batch pulls" process group with the keys `form_uuid`, `base_url` and optionally, the `table_name` the user desires the data to be stored in. The JSON config can be formatted as below:
 
 ```
 {
@@ -22,15 +22,15 @@ The schema for the table is derived from the descriptor of a package retrieved f
 
 <br />
 
-2. __Survey and response JSON feed__
+2. __Exported survey and response JSON feed__
 
-This ingestion method allows users to perform data sinking and visualization of exported flow-results-spec JSON data. This flow has been bundled in a process group titled "Survey and response JSON feed" within "Flow Results Package Connector" process group. To use this, in `Flow results JSON` processor, paste your survey JSON to the "survey" property and your response JSON to the "Custom Text" and "response" properties.
+This ingestion method allows users to perform data sinking and visualisation of exported flow-results-spec JSON data. The process group "Survey and response JSON feed" has the process group "Flow results Package Connector" which bundles this flow. To use this, in Flow results JSON processor, paste your survey JSON to the "survey" property and your response JSON to the "Custom Text" and "response" properties.
 
 <br />
 
 3. __Published responses__
 
-To push a FLOIP submission to an existing table, a POST request is made to NiFi's URL port 9090 and `floip` endpoint. The package name or initially defined table name should be specified as part of the request headers which determines the Postgres table to be updated. Below is an example of a curl request:
+To push a FLOIP submission to an existing table, make a POST request to NiFi's URL port 9090 and `/floip` endpoint, i.e. `[NiFI host]:9090/floip`. The package name or initially defined table name SHOULD be part of the request headers which determines the Postgres table to be updated. Below is an example of a curl request:
 
 
 ```
