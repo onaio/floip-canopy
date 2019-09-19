@@ -4,8 +4,9 @@ This connector is designed in Apache NiFi to automate the process of transferrin
 
 <br />
 
-1. __Flow results API endpoint__
-The schema for the table is derived from the descriptor of a package retrieved from `/flow-results/packages/[form_uuid]`. Once the schema for the table is generated, a table is created in the database. Data is then retrieved from the response endpoint: `/flow-results/packages/[form_uuid]/responses`. The connector requires a JSON configuration with the keys `form_uuid`, `base_url` and optionally, the `table_name` the user desires the data to be stored in. The JSON config can is formatted as below:
+1. __Batch pulls from the API__
+
+The package descriptor from the API endpoint /flow-results/packages/[form_uuid] is used to derive the PostgreSQL table schema. Data is then retrieved from the response endpoint /flow-results/packages/[form_uuid]/responses and inserted to the database. The connector requires a JSON configuration in "API configuration for flow results" processor within the "API Batch pulls" process group with the keys form_uuid, base_url and optionally, the table_name the user desires the data to be stored in. The JSON config format is as below:
 
 ```
 {
@@ -21,17 +22,19 @@ The schema for the table is derived from the descriptor of a package retrieved f
 
 <br />
 
-2. __Survey and response JSON feed__
-For JSON feed, under `Flow results JSON` processor, add the survey JSON to survey attribute and response JSON to the response attribute and custom text property.
+2. __Exported survey and response JSON feed__
+
+This ingestion method allows users to perform data sinking and visualisation of exported flow-results-spec JSON data. The process group "Survey and response JSON feed" has the process group "Flow results Package Connector" which bundles this flow. To use this, in Flow results JSON processor, paste your survey JSON to the "survey" property and your response JSON to the "Custom Text" and "response" properties.
 
 <br />
 
 3. __Published responses__
-To push a FLOIP submission, a POST request is made to NiFi's URL port 9090 and `floip` endpoint. The package name or initially defined table name should be specified as part of the request headers which determines the Postgres table to be updated. Below is an example of a curl request:
+
+To push a FLOIP submission to an existing table, make a POST request to NiFi's URL port 9090 and `/floip` endpoint, i.e. `[NiFI host]:9090/floip`. The package name or initially defined table name SHOULD be part of the request headers which determines the Postgres table to be updated. Below is an example of a curl request:
 
 
 ```
-curl http://localhost:9090/floip -H "package_name: pizza_survey" -d '[["2019-07-09T13:47:05+00:00",1171290623824092,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","date","2019-07-04",null],["2019-07-09T13:47:05+00:00",1171290672224313,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","name","Pizzarea",null],["2019-07-09T13:47:05+00:00",1171290817424982,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","stars",4,null],["2019-07-09T13:47:05+00:00",1171291011025888,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","borough","Manhattan",null],["2019-07-09T13:47:05+00:00",1171291059426117,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","visited","yes",null],["2019-07-09T13:47:05+00:00",1171291156226578,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","location","-1.291449 36.787959 1 1",null]]'
+curl http://localhost:9090/floip -H "package_name: pizza_survey" -d '{"data":{"type":"responses","id":"0c364ee1-0305-42ad-9fc9-2ec5a80c55fa","attributes":{"responses":[["2019-09-18T13:47:05+00:00",1171290623824092,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","date","2019-07-04",null],["2019-09-18T13:47:05+00:00",1171290672224313,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","name","Pizzarea",null],["2019-09-18T13:47:05+00:00",1171290817424982,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","stars",4,null],["2019-09-18T13:47:05+00:00",1171291011025888,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","borough","Manhattan",null],["2019-09-18T13:47:05+00:00",1171291059426117,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","visited","yes",null],["2019-09-18T13:47:05+00:00",1171291156226578,"john","cb398d5a-a039-4ee1-9ffb-16c6c68a8b4d","location","-1.291449 36.787959 1 1",null]]}}}'
 ```
 
 <br />
@@ -129,4 +132,4 @@ The above geopoint is transformed to:
 
 ## Flow results package flowchart
 
-<img src="https://github.com/onaio/floip-canopy/blob/documentation/docs/images/floip_flowchart.png" alt="FLOIP flowchart" width="700" height="1500">
+<img src="https://github.com/onaio/floip-canopy/blob/master/docs/images/floip_flowchart.png" alt="FLOIP flowchart" width="700" height="1500">
