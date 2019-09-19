@@ -6,7 +6,7 @@ This connector is designed in Apache NiFi to automate the process of transferrin
 
 1. __Batch pulls from the API__
 
-The API endpoint `/flow-results/packages/[form_uuid]` returns the package descriptor that is used to derive the PostgreSQL table schema. Data is then retrieved from the response endpoint `/flow-results/packages/[form_uuid]/responses` and inserted to the database. The connector requires a JSON configuration in "API configuration for flow results" processor within the "API Batch pulls" process group with the keys `form_uuid`, `base_url` and optionally, the `table_name` the user desires the data to be stored in. The JSON config can be formatted as below:
+The package descriptor from the API endpoint /flow-results/packages/[form_uuid] is used to derive the PostgreSQL table schema. Data is then retrieved from the response endpoint /flow-results/packages/[form_uuid]/responses and inserted to the database. The connector requires a JSON configuration in "API configuration for flow results" processor within the "API Batch pulls" process group with the keys form_uuid, base_url and optionally, the table_name the user desires the data to be stored in. The JSON config format is as below:
 
 ```
 {
