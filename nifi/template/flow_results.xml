@@ -3080,7 +3080,7 @@
 <properties>
     <entry>
         <key>Match Requirement</key>
-        <value>content must match exactly</value>
+        <value>content must contain match</value>
     </entry>
     <entry>
         <key>Character Set</key>
