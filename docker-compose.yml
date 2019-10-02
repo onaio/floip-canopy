@@ -33,19 +33,21 @@ services:
       POSTGRES_DB: flow_results
 
   superset:
-    image: amancevice/superset:0.28.1
+    image: amancevice/superset:0.34.0
     ports:
       - "8088:8088"
+    user: root
     volumes:
       - ./superset:/etc/superset
     command: >
-      bash -c "sleep 100
-      && fabmanager create-admin --app superset --username 'admin' --firstname Admin --lastname Admin --email noreply --password 'p@ssw0rd'
+      bash -c "pip install psycopg2-binary
       && superset db upgrade
+      && export FLASK_APP=superset
+      && flask fab create-admin --username 'admin' --firstname Admin --lastname Admin --email noreply --password 'p@ssw0rd'
       && superset import_datasources -p /etc/superset/datasources.yaml
       && superset import_dashboards -p /etc/superset/dashboards.json
       && superset init
-      && superset runserver -d"
+      && superset run -h 0.0.0.0 -p 8088"
     depends_on: [db]
 
 volumes:
