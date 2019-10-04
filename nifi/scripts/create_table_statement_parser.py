@@ -142,7 +142,7 @@ def create_table_statement_parser(flow_results_package,
     # the title atribute in the FLOIP schema
     table_name = table_name or remove_special_characters(
         flow_results_package["data"]["attributes"]["title"])
-    table_columns = ["submission_uuid VARCHAR"]
+    table_columns = ["submission_uuid VARCHAR PRIMARY KEY"]
     long_to_truncated_names_map = {}
     geopoints = []
 
